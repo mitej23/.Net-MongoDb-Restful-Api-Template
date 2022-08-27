@@ -1,0 +1,50 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.idea {
+  border: solid 1px #DDD;
+  padding: .5rem;
+  margin-bottom: .5rem;
+}
+
+.idea > span {
+  font-size: .75rem;
+  color: #AAA;
+  font-style: italic;
+  padding: .5rem;
+}
+
+.idea > div {
+  padding: .5rem;
+}
+
+a.create {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+.idea-form > * {
+  display: block;
+}
+
+.idea-form > textarea {
+  height: 5rem;
+  width: 100%;
+}

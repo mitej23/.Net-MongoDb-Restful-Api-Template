@@ -1,0 +1,18 @@
+@model IEnumerable<OktaNetCoreMvcMongoExample.Models.Submission>
+
+<h1>List of Ideas</h1>
+
+    @foreach (var sub in Model)
+    {
+        <div class="idea">
+            <span>Created By: @sub.UserName on @sub.Created.ToLocalTime()</span>
+            <span>Last Updated: @sub.LastUpdated.ToLocalTime()</span>
+            <div>
+                @sub.Content
+            </div>
+            <a asp-action="Edit" asp-route-id="@sub.Id">edit</a>
+            <a asp-action="Delete" asp-route-id="@sub.Id">delete</a>
+        </div>   
+    }
+<hr/>
+<a class="create" asp-action="Create">Add New Idea</a>
